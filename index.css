@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, .alarm-box, .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  padding: 20px;
+  min-height: 100vh;
+  background: #2d2d2d;
+  color: #fff;
+  background: url('q.jpg') no-repeat center/cover;
+}
+
+.alarm-box {
+  width: 75vw;
+  background: #333;
+  padding: 30px;
+  border: 2px solid #555;
+  border-radius: 10px;
+  color: #ddd;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  flex-direction: column;
+  box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.5),
+  -5px 5px 11px rgba(255, 255, 255, 0.09);
+}
+
+.alarm-box img {
+  max-width: 175px;
+  margin-bottom: 20px;
+}
+
+.alarm-box h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #9b59b6;
+  margin: 20px 0;
+}
+
+.alarm-box .content {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.content.disable {
+  cursor: not-allowed;
+}
+
+.content .column {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #555;
+  width: calc(100% / 3 - 20px);
+  background: #AC7D88;
+}
+
+.content.disable .column {
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.column select {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 15px;
+  color: #333;
+}
+
+.alarm-box button {
+  padding: 15px 0;
+  margin: 20px 0;
+  width: 100%;
+  background: #81689D;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border: 2px solid #2980b9;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.5),
+  -3px -3px 7px rgba(255, 255, 255, 0.09);
+}
